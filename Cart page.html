@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products-E-COMMERCE WEBSITE</title>
+    <link rel="stylesheet" href="01style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="clothing/Logo.png" width="125px" height="90px"></a>
+                </div>
+                <nav>
+                    <ul id="menueitems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="Registrationpage.html">Accounts</a></li>
+                    </ul>
+                </nav>
+                <a href="Cart page.html"><img src="clothing/LOCK.png" width="25px" height="25px" id="cartimg"></a>
+                <img src="clothing/MENUE.png" class="menue-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+
+        <!------- cart items details------>
+
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="clothing/categories1.jpg" alt="">
+                            <div>
+                                <p>blue party Gown</p>
+                                <small>Price: $100.00</small>
+                                <br> 
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number"value="1"></td>
+                    <td>$200.00</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="clothing/frock-6.jpg" alt="">
+                            <div>
+                                <p>Pure cotton dress</p>
+                                <small>Price: $90.00</small>
+                                <br> 
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number"value="1"></td>
+                    <td>$200.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="clothing/jeans.jpg" alt="">
+                            <div>
+                                <p>Boys baba suit</p>
+                                <small>Price: $250.00</small>
+                                <br> 
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number"value="1"></td>
+                    <td>$200.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$300.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$335.00</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+        </div>
+
+
+   
+    <!-------------------- footer -------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download app for android & ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="clothing/FOOTER-IMG.jpeg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="clothing/Logo.png" alt="">
+                    <p>Our purpose is to sustainable make the pleasure & benefits for the choices of your look up</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 &COPY; www.fabulousDressingShop!AnewStyle.com. All rights reserved</p>
+        </div>
+    </div>
+
+    <!-- -------------js for menue toggle----------- -->
+    <script>
+        var menueitems = document.getElementById("menueitems");
+        menueitems.style.maxHeight = "0px";
+        function menutoggle(){
+            if (menueitems.style.maxHeight == "0px")
+            {
+                menueitems.style.maxHeight = "200px";
+            } 
+            else
+            {
+                menueitems.style.maxHeight = "0px"; 
+            }
+        }
+    </script>
+</body>
+
+</html>

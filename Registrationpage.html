@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products-E-COMMERCE WEBSITE</title>
+    <link rel="stylesheet" href="01style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+               <a href="index.html"> <img src="clothing/Logo.png" width="125px" height="90px"></a>
+            </div>
+            <nav>
+                <ul id="menueitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Registrationpage.html">Accounts</a></li>
+                </ul>
+            </nav>
+            <a href="Cart page.html"><img src="clothing/LOCK.png" width="25px" height="25px" id="cartimg"></a>
+            <img src="clothing/MENUE.png" class="menue-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+
+    <!-------------- Account Page --------------- -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="clothing/saving-img.png" width="100%">
+                </div>
+
+                <div class="col-1">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="Loginform">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn-1">Login</button>
+                            <a href="">Forget password</a>
+                        </form>
+
+                        <form id="Regform">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn-1">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-------------------- footer -------------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download app for android & ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="clothing/FOOTER-IMG.jpeg">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="clothing/Logo.png" alt="">
+                    <p>Our purpose is to sustainable make the pleasure & benefits for the choices of your look up</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2024 &COPY; www.fabulousDressingShop!AnewStyle.com. All rights reserved</p>
+        </div>
+    </div>
+
+    <!-- -------------js for menue toggle----------- -->
+    <script>
+        var menueitems = document.getElementById("menueitems");
+        menueitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menueitems.style.maxHeight == "0px") {
+                menueitems.style.maxHeight = "200px";
+            }
+            else {
+                menueitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+    <!-- -------------js for toggle form----------- -->
+    <script>
+        let Loginform = document.getElementById("Loginform");
+        let Regform = document.getElementById("Regform");
+        let Indicator = document.getElementById("Indicator");
+        
+        function register() {
+            Regform.style.transform = "translateX(300px)";
+            Loginform.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+        function login() {
+            Regform.style.transform = "translateX(0px)";
+            Loginform.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+    </script>
+</body>
+
+</html>
